@@ -1,0 +1,20 @@
+{
+    "name": "students/john",
+    "description": "john waithira projects",
+    "autoload": {
+        "psr-4": {
+            "Students\\John\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "johnwaithira"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "ext-pdo": "*",
+      "ext-openssl": "*",
+      "ext-zip": "*"
+    }
+}
