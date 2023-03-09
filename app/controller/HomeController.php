@@ -15,13 +15,9 @@ class HomeController extends Controller
     public function home(Request $request)
     {
 
-        $username = $request->getrouteParams()['username'];
+        $this->layout = "layouts.app";
 
-        $user = new Backend(Application::$app->db);
-
-
-        echo $user->User($username)['bio'];
-
+        return $this->view("home");
 
 
     }
